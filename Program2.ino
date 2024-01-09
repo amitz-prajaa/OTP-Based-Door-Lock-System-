@@ -79,7 +79,7 @@ void loop() {
   if (enteredPassword.equals(storedPassword)) {
 
     otp = generateOTP();
-    sendSMS("+916266362249" , " |---  Door Lock System ---| Your OTP for opening Lock is " + otp + ". It is valid for one minute only !!"); // Send SMS with OTP
+    sendSMS("+91xxxxx-xxxxx" , " |---  Door Lock System ---| Your OTP for opening Lock is " + otp + ". It is valid for one minute only !!"); // Send SMS with OTP
     lcd.clear();
 
     lcd.print("Enter OTP:");
