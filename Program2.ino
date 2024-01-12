@@ -81,6 +81,9 @@ void loop() {
     otp = generateOTP();
     sendSMS("+91xxxxx-xxxxx" , " |---  Door Lock System ---| Your OTP for opening Lock is " + otp + ". It is valid for one minute only !!"); // Send SMS with OTP
     lcd.clear();
+    lcd.print("OTP Sending....");
+    delay(6000);
+    lcd.clear();
 
     lcd.print("Enter OTP:");
     Serial.println("Enter OTP:");
